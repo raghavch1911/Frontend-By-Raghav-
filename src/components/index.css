@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #6c5ce7;
+  --primary-dark: #4834d4;
+  --background: #f5f7fa;
+  --text: #2d3436;
+  --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* --- Welcome Page Layout --- */
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #a29bfe, #dfe6e9);
+}
+
+.welcome-container {
+  background-color: var(--white);
+  padding: 60px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: var(--shadow);
+  text-align: center;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.welcome-title {
+  font-size: 2.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #636e72;
+  line-height: 1.6;
+}
+
+/* --- Buttons --- */
+.welcome-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(108, 92, 231, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Mobile Styles --- */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 30px 20px;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .welcome-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
