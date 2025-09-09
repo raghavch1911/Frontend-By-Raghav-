@@ -20,3 +20,13 @@ you're working as a junior developer on a railway ticket booking portal. Add new
 i. create a Dockerfile and build a Docker image named OTS to push it to DockerHUB.
 ii. Run the image in a container and expose port 8080. check if the app runs at http://localhost:8080.
 iii. create a docker-compose.yml file so the app can work with other services like a database in the future.
+
+
+
+4. Run the project with docker [30 Marks]
+i. create a Dockerfile and build a Docker image named OTS to push it to DockerHUB.
+ii. Run the image in a container and expose port 8080. check if the app runs at http://localhost:8080.
+iii. create a docker-compose.yml file so the app can work with other services like a database in the future.
+
+In this path C:\Users\fs\Desktop\MyApp
+help me do it with 3 files app.py dockerfile and docker-compose.yml
