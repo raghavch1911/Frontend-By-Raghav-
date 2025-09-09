@@ -27,133 +27,33 @@ iii. create a docker-compose.yml file so the app can work with other services li
 
 
 
-a. Project Summary (Abstract)
+c. Non-Functional Requirements:
 
-The project aims to develop a web-based E-ticketing system that enables users to book tickets for various events such as movies, concerts, and public events seamlessly. The system will automate and simplify the entire ticket booking process, replacing manual methods that lead to inefficiencies such as long queues, delays, and human errors. By providing a user-friendly platform, the system will enable customers to browse available events, choose their preferred seats or tickets, make payments, and receive e-tickets for easy entry. This solution will enhance user experience, streamline event management, and reduce operational costs for organizers.
+Usability: Easy-to-use, responsive interface accessible on desktop, tablet, and mobile.
+Scalability: Can handle many simultaneous users during peak times.
+Performance: Fast response times with minimal delays, even under heavy traffic.
+Security: Secure payment processing and user authentication with protocols like SSL.
+Availability: High availability with minimal downtime and communicated maintenance schedules.
+Reliability: Consistent system performance, especially for payments and ticket generation.
+Backup & Data Recovery: Regular data backups and disaster recovery plan in place.
+Interoperability: Integrates with third-party services (e.g., payment gateways, email notifications).
 
-b. Functional Requirements
+d. Types of Users:
 
-User Registration & Authentication:
+Customer (End User): Books tickets for events.
+Event Organizer (Admin): Manages events, bookings, and refunds.
+System Administrator: Manages infrastructure, user queries, and security.
 
-Users should be able to create an account, login, and manage their profile securely.
+e. Main Parts (Modules) of the System:
 
-Browse Events:
-
-Users should be able to search and view upcoming movies, concerts, or public events based on date, location, category, etc.
-
-Event Selection:
-
-Users can select the event, view available seats (for events like movies or concerts), and pick their preferred seats.
-
-Ticket Booking:
-
-Users can choose the number of tickets, enter required details, and confirm their booking.
-
-Payment Integration:
-
-Secure online payment options (credit/debit cards, e-wallets, etc.) for ticket purchase.
-
-E-Ticket Generation:
-
-Upon successful booking and payment, users will receive a digital ticket (QR code or barcode) for event entry.
-
-Booking History:
-
-Users can view and track their past bookings, including details of events and payment receipts.
-
-Notifications and Alerts:
-
-The system should send booking confirmations, reminders, and updates to users.
-
-Admin Panel:
-
-Admins can manage events, view bookings, and process refunds or cancellations.
-
-Ticket Cancellation & Refund:
-
-Users can cancel their tickets and receive a refund, subject to event policies.
-
-c. Non-Functional Requirements
-
-Usability:
-
-The system should be easy to use with an intuitive, responsive interface accessible from various devices (desktop, tablet, mobile).
-
-Scalability:
-
-The system should be capable of handling a large number of simultaneous users, especially during peak booking times (e.g., for popular events).
-
-Performance:
-
-The application should have fast response times, with minimal loading delays even under heavy traffic.
-
-Security:
-
-Data protection and user privacy are paramount. The system should implement secure protocols (e.g., SSL) for payment processing and secure user authentication.
-
-Availability:
-
-The system should have high availability, ensuring users can book tickets at any time. Downtime should be minimized, and scheduled maintenance should be communicated in advance.
-
-Reliability:
-
-The system should perform its tasks consistently without errors or failures, especially when dealing with payments or ticket generation.
-
-Backup and Data Recovery:
-
-The system should back up data regularly and have a disaster recovery plan to restore services if something goes wrong.
-
-Interoperability:
-
-The system should integrate with third-party services for payment processing, email notifications, etc.
-
-d. Types of Users
-
-Customer (End User):
-
-Individuals who book tickets for movies, concerts, or public events.
-
-Event Organizer (Admin):
-
-Individuals or organizations responsible for creating and managing events, handling bookings, and processing refunds.
-
-System Administrator:
-
-Technical staff who manage the system infrastructure, handle user queries, ensure data security, and maintain overall system health.
-
-e. Main Parts (Modules) of the System
-
-User Interface (UI):
-
-The front-end platform for customers and admins to interact with the system (website or mobile app).
-
-Event Management Module:
-
-Manages the creation and details of events, such as dates, locations, available seats, and event categories.
-
-Booking & Ticketing Module:
-
-Allows users to select, book, and pay for tickets. Generates e-tickets upon successful booking.
-
-Payment Gateway Integration:
-
-Handles payment processing, ensuring secure financial transactions.
-
-User Account Management:
-
-Manages user registration, login, profile, and booking history.
-
-Notification System:
-
-Sends booking confirmations, reminders, and event updates via email or SMS.
-
-Admin Panel:
-
-Allows administrators to manage events, view bookings, and process cancellations or refunds.
-
-Security & Authentication:
-
-Ensures that the system is secure, including user authentication, encryption, and data protection.
+User Interface (UI): Front-end platform for interaction (website/app).
+Event Management Module: Manages event details (dates, locations, seats).
+Booking & Ticketing Module: Handles ticket booking and e-ticket generation.
+Payment Gateway Integration: Manages secure payment processing.
+User Account Management: Handles user registration, login, and booking history.
+Notification System: Sends confirmations, reminders, and updates.
+Admin Panel: Admins manage events, bookings, and refunds.
+Security & Authentication: Ensures user authentication and data security.
 
 f. Use Case Diagram
 
@@ -188,3 +88,4 @@ Below is a simplified version of how the different users interact with the syste
    | Generate   |
    | E-Ticket   |
    +------------+
+
